@@ -7,6 +7,15 @@ const PORT = process.env.PORT || 3000;
 // Enable CORS
 app.use(cors());
 
+// Root route
+app.get('/', (req, res) => {
+    res.send(`
+        <h1>Welcome to the Number Classification API</h1>
+        <p>Use the <code>/api/classify-number?number=XXX</code> endpoint to classify a number.</p>
+        <p>Example: <a href="/api/classify-number?number=371">/api/classify-number?number=371</a></p>
+    `);
+});
+
 // Helper functions
 function isPrime(n) {
     if (n < 2) return false;
