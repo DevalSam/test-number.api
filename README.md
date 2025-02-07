@@ -1,7 +1,3 @@
-### **Step 5: Add a `README.md` File**
-Create a `README.md` file in your project directory with the following content:
-
-```markdown
 # Number Classification API
 
 This API analyzes a given number and returns its mathematical properties along with a fun fact.
